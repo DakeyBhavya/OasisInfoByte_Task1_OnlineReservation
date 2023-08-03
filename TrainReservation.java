@@ -44,6 +44,7 @@ class TrainReservation
          else 
         {
             System.out.println("INVALID USERNAME OR PASSWORD OR NO USER FOUND");
+            System.out.println("Please Try again!!");
         }
         sc.close();
     }
@@ -54,6 +55,10 @@ class TrainReservation
         System.out.println("\n"+"  ***REGISTRATION_FORM***  "+"\n");
         System.out.print("Please enter Number of Passengers:");
         int noP= sc.nextInt();
+        System.out.println("Enter Number of Adults:");
+        int A=sc.nextInt();
+        System.out.println("Enter number of children:");
+        int ch=sc.nextInt();
         sc.nextLine();
         System.out.println("Please enter passenger Name/Names:");
         for(int i=1;i<=noP;i++)
@@ -79,8 +84,8 @@ class TrainReservation
     private static void cancellation_form() 
     {
         Scanner sc = new Scanner(System.in);
-        System.out.println("\n"+" *** TICKET CANCELLATION_FORM ***  ");
-        System.out.print("Please Enter Your PNR Number:");
+        System.out.println("\n"+" *** TICKET CANCELLATION_FORM ***  "+"\n");
+        System.out.print("Please Enter Your PNR Number :");
         String PNR_NUM = sc.nextLine();
         System.out.println("Your Ticket Is Successfully Cancelled");
         //sc.close();
